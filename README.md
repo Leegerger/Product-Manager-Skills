@@ -112,6 +112,32 @@ Choose your setup:
 
 **All downloads:** [GitHub Releases](https://github.com/deanpeters/Product-Manager-Skills/releases/latest)
 
+### Start here by situation
+
+Don't know where to begin? Find the line that sounds like your week. Each route is **a suggested order, not a pipeline** — every skill runs on its own, so skip ahead, reorder, or stop after one. The first prompt is real: paste it, swap in your details, and go.
+
+| If this is you... | Try, in this order | Time | Paste this first |
+|---|---|---|---|
+| **"I have an idea and I don't know if it's real."** | [problem-framing-canvas](skills/problem-framing-canvas/SKILL.md) → [discovery-interview-prep](skills/discovery-interview-prep/SKILL.md) → [pol-probe-advisor](skills/pol-probe-advisor/SKILL.md) | ~1–1.5 hr | `Frame this problem: field sales reps 'don't use the CRM' and leadership wants gamification.` |
+| **"A request or mandate just landed on my desk."** | [incoming-request-advisor](skills/incoming-request-advisor/SKILL.md) → [stakeholder-mapping](skills/stakeholder-mapping/SKILL.md) → [prioritization-advisor](skills/prioritization-advisor/SKILL.md) | ~1 hr | `My VP DM'd me: "Any chance the dashboard redesign lands next sprint? Board's asking." Analyze this before I reply.` |
+| **"I need to understand the market, fast."** | [market-landscape-scan](skills/market-landscape-scan/SKILL.md) → [competitive-research-snapshot](skills/competitive-research-snapshot/SKILL.md) → [swot-analysis](skills/swot-analysis/SKILL.md) | ~1–2 hr | `Run a market landscape scan on [your market], and tell me the decision it should support.` |
+| **"We keep getting compared and losing."** | [positioning-workshop](skills/positioning-workshop/SKILL.md) → [roadmap-planning](skills/roadmap-planning/SKILL.md) *(going bigger: [product-strategy-session](skills/product-strategy-session/SKILL.md), a 2–4 week workflow)* | ~2–3 hr | `Run a positioning workshop for our API monitoring tool — we keep getting compared to Datadog and losing.` |
+| **"Time to write it down."** | [prd-development](skills/prd-development/SKILL.md) → [epic-breakdown-advisor](skills/epic-breakdown-advisor/SKILL.md) → [user-story](skills/user-story/SKILL.md) | ~1.5–3 hr | `Build a PRD for self-serve workspace provisioning — here are my discovery notes and the OKR it ladders to.` |
+| **"Our product is getting old."** | [lifecycle-play-advisor](skills/lifecycle-play-advisor/SKILL.md) → [eol-readiness-advisor](skills/eol-readiness-advisor/SKILL.md) → [eol-process](skills/eol-process/SKILL.md) | ~30–50 min to a decision | `Help me decide what to do with [product]. Here's what makes me think it's fading: [signals].` |
+| **"I'm stepping up a level."** | [director-readiness-advisor](skills/director-readiness-advisor/SKILL.md) *or* [vp-cpo-readiness-advisor](skills/vp-cpo-readiness-advisor/SKILL.md) — pick by where you're headed | ~10–20 min | `I'm 60 days into a Director role and my old peers now report to me — it's awkward and I'm still doing PM work. Coach me.` |
+| **"I'm new here, or not sure."** | The [Starter pack](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) — six skills across the craft | — | Install it, then ask: `Which of these skills fits what's on my desk this week?` |
+
+**Why these orders (so you can break them on purpose):**
+
+- **Idea → problem → people → probe.** Name the problem before you ask anyone about it, and ask people before you build anything. The probe comes last because it's the most expensive of the three.
+- **Request → decode → map → decide.** Understand what's really being asked before replying, know who else is in the room, *then* ask where it fits. Prioritizing first is how a loud VP becomes your roadmap.
+- **Market → competitors → SWOT.** Evidence first, framework last. SWOT on top of no research is opinion with a 2×2 around it.
+- **Positioning → roadmap.** Decide who you're for and why you win before choosing what to build. The strategy session is the full-length version when the question is bigger than a quarter.
+- **PRD → epics → stories.** The *why* first, then slices, then the smallest writeable pieces. Writing stories first is how a backlog loses its reason.
+- **Aging → play → readiness → process.** The first skill may say **"nothing yet"** — extending or harvesting is a legitimate answer, and starting here does not commit you to a sunset.
+
+**On Claude Desktop or Web?** Several of these skills aren't in a themed pack. Grab them one at a time from the [download shelf](dist/), or take the All-skills pack.
+
 ### Themed packs for Claude Desktop / Web
 
 Each pack below is a ZIP of upload-ready skill ZIPs — unzip, then upload individuals to Claude Skills:
