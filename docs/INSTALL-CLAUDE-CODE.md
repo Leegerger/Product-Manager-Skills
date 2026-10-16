@@ -2,9 +2,23 @@
 
 Claude Code users should usually use the existing plugin marketplace path. It keeps terminal workflows clean and preserves the Claude Code installation pattern this repo already supports.
 
-## Quick Setup
+## Install Everything at Once
 
-In Claude Code, add the marketplace and install the skill you need:
+Want the whole library without picking skills one by one? Install the all-in-one plugin:
+
+```text
+/plugin marketplace add deanpeters/Product-Manager-Skills
+/plugin install product-manager-skills@pm-skills
+/reload-plugins
+```
+
+You get all 77 skills and the slash commands in one step.
+
+**Choose one path.** Install the all-in-one plugin *or* individual skills, not both. Installing both can load the same skill twice.
+
+## Install Individual Skills
+
+Prefer to start small? Add the marketplace and install only the skill you need:
 
 ```text
 /plugin marketplace add deanpeters/Product-Manager-Skills
@@ -25,7 +39,7 @@ The ZIP packs are designed for Claude Desktop and Claude Web skill upload. Claud
 Use the marketplace when:
 
 - You work primarily in a terminal.
-- You want to install one skill at a time.
+- You want everything in one step (`product-manager-skills`), or one skill at a time.
 - You want Claude Code to discover skills through its plugin system.
 
 Use the ZIP packs only when you are setting up Claude Desktop or Claude Web.

@@ -10,6 +10,18 @@
   },
   "plugins": [
     {
+      "name": "product-manager-skills",
+      "source": "./",
+      "description": "All PM skills in one install \u2014 discovery, strategy, delivery, finance, career, lifecycle, and more. Choose this OR individual skills, not both.",
+      "category": "bundle",
+      "tags": [
+        "pm",
+        "bundle",
+        "all-skills"
+      ],
+      "strict": false
+    },
+    {
       "name": "acquisition-channel-advisor",
       "source": "./skills/acquisition-channel-advisor",
       "description": "Evaluate acquisition channels using unit economics, customer quality, and scalability.",

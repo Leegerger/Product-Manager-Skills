@@ -106,7 +106,7 @@ Choose your setup:
 | I use... | Get this | Notes |
 |---|---|---|
 | Claude Desktop or Claude Web | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Unzip, then upload the individual skill ZIPs to Claude Skills |
-| Claude Code | Plugin marketplace | `claude /plugin marketplace add deanpeters/Product-Manager-Skills` |
+| Claude Code | Plugin marketplace | `/plugin marketplace add deanpeters/Product-Manager-Skills`, then `/plugin install product-manager-skills@pm-skills` for everything (or install skills one at a time) |
 | Codex | [`pm-skills-codex.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-codex.zip) | Installs `.agents/skills` and `AGENTS.md` |
 | Not sure | [`pm-skills-starter-pack.zip`](https://github.com/deanpeters/Product-Manager-Skills/releases/latest/download/pm-skills-starter-pack.zip) | Start here |
 

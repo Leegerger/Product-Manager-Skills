@@ -4,6 +4,7 @@
 Checks:
 - every skills/<name>/ directory has an entry in .claude-plugin/marketplace.json
 - every marketplace.json entry points at a skill directory that exists (no ghosts)
+  (bundle entries with source "./" install the whole repo and are exempt)
 - every skills/<name>/SKILL.md link mentioned in README.md and CLAUDE.md resolves
 
 Why this exists: v0.81 shipped two fixes for exactly these failures — a skill
@@ -44,7 +45,16 @@ def check_marketplace(skills: set[str]) -> list[str]:
     with open(MARKETPLACE_PATH, "r", encoding="utf-8") as handle:
         marketplace = json.load(handle)
 
-    listed = {plugin["name"] for plugin in marketplace.get("plugins", [])}
+    plugins = marketplace.get("plugins", [])
+    # Bundle entries (source "./") install the whole repo, not one skill dir.
+    bundles = [p for p in plugins if p.get("source") in ("./", ".")]
+    listed = {p["name"] for p in plugins if p not in bundles}
+    for bundle in bundles:
+        if not os.path.isdir("skills"):
+            issues.append(
+                f"marketplace_bundle_broken: bundle '{bundle['name']}' needs a "
+                f"skills/ directory at the repo root"
+            )
 
     for name in sorted(skills - listed):
         issues.append(
